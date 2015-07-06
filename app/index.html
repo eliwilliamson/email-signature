@@ -1,0 +1,102 @@
+---
+layout: default
+title: "Healthways Signature Creator"
+body_class: "email-signature"
+---
+
+<section class="content forms">
+  <div class="container">
+    <section class="cta-msg">
+      <h2>Create your very own Healthways Email Signature!</h2>
+      <p>Fill in the input fields below, then copy and paste the results into your email app of choice.</p>
+      <hr>
+    </section>
+
+    <form>
+      <div class="fieldset-wrap">
+        <fieldset class="add-this-text">
+          <p>These sections aren't optional!:</p>
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="name" id="name" class="name input-field form-control" placeholder="your name" autofocus />
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="job" id="job" class="job-title input-field form-control" placeholder="your job title" />
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="phone" id="phone" class="phone input-field form-control" placeholder="your phone #" />
+        </fieldset>
+
+        <fieldset class="add-this-text">
+          <hr>
+          <p>Add this info if you want to include personal links:</p>
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="twitter" id="twitter" class="twitter input-field optional form-control" placeholder="twitter username (no @ sign)" />
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="dribble" id="dribbble" class="dribbble input-field optional form-control" placeholder="dribbble username" />
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="linkedin" id="linkedin" class="linkedin input-field optional form-control" placeholder="linked in profile link" />
+        </fieldset>
+
+        <fieldset class="form-actions">
+          <input type="text" name="github" id="github" class="github input-field optional form-control" placeholder="github username" />
+        </fieldset>
+      </div>
+    </form>
+
+    <div class="sig-container">
+      <section id="signature-preview" class="sig-preview">
+        <p style="font-family: Helvetica, Arial, sans-serif; line-height: 12px; color: #222;">
+          <span id="name-output" style="font-size: 14px;" class="txt"></span>
+          <span id="job-output" style="color: #666;text-transform:uppercase;font-size:11px" class="txt"></span><br>
+          <span id="phone-output" style="color: #666;font-size:11px" class="txt"></span><br>
+          <a data-uri="http://twitter.com/" id="twitter-output" style="display:none; text-decoration:none;" class="hidden optional-field" target="_blank">
+            <span style="color: #666;font-size: 10px;">Twitter
+              <span id="title-sep" style="font-size:12px; color:#111; opacity:0.0;" class="hidden separator"> &bull; </span>
+            </span>
+          </a>
+          <a data-uri="http://dribbble.com/" style="display:none;text-decoration:none;" id="dribbble-output" class="hidden optional-field" target="_blank">
+            <span style="color: #666;font-size: 10px;">Dribbble
+              <span id="title-sep" style="font-size:12px; color:#111; opacity:0.0;" class="hidden separator"> &bull; </span>
+            </span>
+          </a>
+          <a style="display:none;" id="linkedin-output" class="hidden optional-field" target="_blank">
+            <span style="color: #666;font-size: 10px;">LinkedIn</span>
+            <span id="title-sep" style="font-size:12px; color:#111; opacity:0.0;" class="hidden separator"> &bull; </span>
+          </a>
+          <a data-uri="http://github.com/" style="display:none;text-decoration:none;" id="github-output" class="hidden optional-field" target="_blank">
+            <span style="color: #666;font-size: 10px;">Github</span>
+          </a>
+        </p>
+        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; line-height: 11px; color: #999">
+          <a href="http://healthways.com" style="text-decoration:none;" alt="healthways"><img alt="Healthways" border="0" src="/images/hw-email-logo.jpg" style="min-height:auto;max-width:100%;vertical-align:middle;margin-bottom:12px;border:0px"></a><br />
+          <span id="address-input" style="color: #222;font-size:11px" class="txt">701 Cool Springs Blvd. Franklin, TN 37067</span><br/>
+          <span id="web-input" style="color: #666;" class="txt"><a href="http://healthways.com" alt="Healthways.com" style="color: #999;text-decoration:none;">healthways.com</a></span>
+          <span id="title-sep" style="font-size:12px; color:#111;"> &bull; </span>
+          <span id="twitter-input" style="font-size:10px;" class="txt"><a href="http://twitter.com/healthways" alt="Follow us on Twitter" style="color: #999;text-decoration:none;">@healthways</a></span>
+        </p>
+      </section>
+    </div>
+
+    <div class="help-text">
+    <hr>
+      <h2>Signature Instructions for Gmail Webapp:</h2>
+      <ol>
+        <li>Click on the gear icon just over the time column of your emails</li>
+        <li>Click on Settings</li>
+        <li>Scroll to Signature on the main settings page and paste in your signature</li>
+        <li>Scroll to the bottom of the page, click Save Changes</li>
+        <li>Compose a new message to see it in action!</li>
+      </ol>
+    </div>
+  </div>
+</section>

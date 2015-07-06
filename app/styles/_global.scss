@@ -1,0 +1,12 @@
+@import "header";
+
+// GENERIC CONTAINER STYLES
+.container {
+  @include outer-container;
+  padding: 1em;
+  position: relative;
+
+  @include media($large) {
+    padding: 0;
+  }
+}
