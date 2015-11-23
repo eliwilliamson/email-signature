@@ -95,7 +95,7 @@
 
   (function() {
     var inputs;
-    inputs = ['name', 'job', 'phone', 'twitter', 'dribbble', 'linkedin', 'github'];
+    inputs = ['name', 'job', 'phone', 'email', 'twitter', 'dribbble', 'linkedin', 'github'];
     return new EmailSignatureGenerator(inputs);
   })();
 
