@@ -88,11 +88,12 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 
 // Update absolute asset paths for GitHub Pages subdirectory
 gulp.task('replace', ['optimize'], function () {
-  var ghPages = '$1http://eliwilliamson.github.io/eliwilliamson';
+  var ghPages = '$1http://healthways.github.io/email-signature';
 
   return gulp.src('dist/**/*.html')
     .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
     .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
+    .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
     .pipe(gulp.dest('dist'));
 });
 
