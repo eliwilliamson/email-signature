@@ -76,24 +76,17 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 
   return gulp.src('dist/**/*.html')
     .pipe(assets)
-    .pipe($.if('*.css', $.minifyCss()))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.rev())
-    .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.revReplace())
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
 
-// Update absolute asset paths for GitHub Pages subdirectory
+// Update absolute asset paths for Netlify subdirectory
 gulp.task('replace', ['optimize'], function () {
-  var ghPages = '$1http://healthways.github.io/email-signature';
+  var netlifyURL = '$1http://signature.netlify.com';
 
   return gulp.src('dist/**/*.html')
-    .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
-    .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
-    .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
+    .pipe($.replace(/("|'?)\/?styles\//g,  netlifyURL + '/styles/'))
+    .pipe($.replace(/("|'?)\/?scripts\//g, netlifyURL + '/scripts/'))
+    .pipe($.replace(/("|'?)\/?images\//g, netlifyURL + '/images/'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -105,9 +98,9 @@ gulp.task('build', ['replace'], function () {
     }));
 });
 
-gulp.task('gh-pages', function () {
+gulp.task('netlify-url', function () {
   return gulp.src('dist/**/*')
-    .pipe($.ghPages())
+    .pipe(gulp.dest('dist'))
 });
 
 gulp.task('watch', function () {
@@ -137,7 +130,7 @@ gulp.task('serve', function () {
 
 gulp.task('deploy', function () {
   production = true;
-  runSequence('clean', 'build', 'gh-pages');
+  runSequence('clean', 'build', 'netlify-url');
 });
 
 gulp.task('default', function () {
