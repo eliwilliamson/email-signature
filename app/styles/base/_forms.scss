@@ -135,7 +135,7 @@ select {
 
     &:after {
       @include position(absolute, 9px 9px null null);
-      color: $blue;
+      color: $netlify-green;
       content: '\f133';
       font-family: 'FontAwesome';
     }

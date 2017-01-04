@@ -16,7 +16,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue:            #4583D9;
+$netlify-green:   #00C7B7;
 $green-light:     #E6EFC2;
 $green:           #5cb85c;
 $orange:          #ff6114;
@@ -28,7 +28,7 @@ $yellow-light:    #FFF6BF;
 // Grayscale
 $white:           #FFF;
 $gray-light:      #E8E8E8;
-$gray:            #8a8583;
+$gray:            #313D3E;
 $gray-dark:       #3c3937;
 $gray-darker:     #1D1B1A;
 $gray-darkest:    #121010;
@@ -37,7 +37,7 @@ $black:           #000;
 // Font Colors
 $base-background-color: $white;
 $base-font-color: $gray-dark;
-$base-accent-color: $orange;
+$base-accent-color: $netlify-green;
 $action-color: $base-accent-color;
 
 // Border

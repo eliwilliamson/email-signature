@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Healthways Signature Creator"
+title: "Netlify Signature Creator"
 body_class: "email-signature"
 ---
 
 <section class="content forms">
   <div class="container">
     <section class="cta-msg">
-      <h2>Create your very own Healthways Email Signature!</h2>
+      <h2>Create your very own Netlify Email Signature!</h2>
       <p>Fill in the input fields below, then copy and paste the results into your email app of choice.</p>
       <hr>
     </section>
@@ -61,8 +61,7 @@ body_class: "email-signature"
       <section id="signature-preview" class="sig-preview">
         <p style="font-family: Helvetica, Arial, sans-serif; line-height: 12px; color: #222;">
           <span id="name-output" style="font-size: 14px;" class="txt"></span>
-          <span id="job-output" style="color: #666;text-transform:uppercase;font-size:11px" class="txt"></span><br>
-          <span id="phone-output" style="color: #666;font-size:11px" class="txt"></span> <a id="email-output" data-uri="mailto:" style="color: #666;font-size:11px" class="txt"></a><br>
+          <span id="job-output" style="color: #666;text-transform:uppercase;font-size:11px;display: block;margin-top: 6px;" class="txt"></span>
           <a data-uri="http://twitter.com/" id="twitter-output" style="display:none; text-decoration:none;" class="hidden optional-field" target="_blank">
             <span style="color: #666;font-size: 10px;">Twitter
               <span id="title-sep" style="font-size:12px; color:#111; opacity:0.0;" class="hidden separator"> &bull; </span>
@@ -79,14 +78,16 @@ body_class: "email-signature"
           </a>
           <a data-uri="http://github.com/" style="display:none;text-decoration:none;" id="github-output" class="hidden optional-field" target="_blank">
             <span style="color: #666;font-size: 10px;">Github</span>
-          </a>
+          </a><br><br>
+          <a id="email-output" data-uri="mailto:" style="color: #666;font-size:11px;display: block;" class="txt"></a>
+          <span id="phone-output" style="color: #666;font-size:11px" class="txt"></span><br><br>
         </p>
         <p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; line-height: 11px; color: #999">
-          <a href="http://healthways.com" style="text-decoration:none;" alt="healthways"><img alt="Healthways" border="0" src="/images/hw-email-logo.jpg" style="min-height:auto;max-width:100%;vertical-align:middle;margin-bottom:12px;border:0px;width:200px;"></a><br />
-          <span id="address-input" style="color: #222;font-size:11px" class="txt">701 Cool Springs Blvd. Franklin, TN 37067</span><br/>
-          <span id="web-input" style="color: #666;" class="txt"><a href="http://healthways.com" alt="Healthways.com" style="color: #999;text-decoration:none;line-height:20px;">healthways.com</a></span>
+          <a href="https://www.netlify.com" style="text-decoration:none;" alt="netlify"><img alt="Netlify" border="0" src="/images/netlify-logo.jpg" style="min-height:auto;max-width:100%;vertical-align:middle;margin-bottom:12px;border:0px;width:130px;"></a><br />
+          <span id="address-input" style="color: #222;font-size:11px" class="txt">Write frontend code. Push it. We handle the rest.</span><br/>
+          <span id="web-input" style="color: #666;" class="txt"><a href="https://www.netlify.com" alt="Netlify.com" style="color: #999;text-decoration:none;line-height:20px">netlify.com</a></span>
           <span id="title-sep" style="font-size:12px; color:#111;"> &bull; </span>
-          <span id="twitter-input" style="font-size:10px;" class="txt"><a href="http://twitter.com/healthways" alt="Follow us on Twitter" style="color: #999;text-decoration:none;">@healthways</a></span>
+          <span id="twitter-input" style="font-size:10px;" class="txt"><a href="http://twitter.com/netlify" alt="Follow us on Twitter" style="color: #999;text-decoration:none;">@netlify</a></span>
         </p>
       </section>
     </div>
