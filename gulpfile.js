@@ -81,7 +81,7 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 
 // Update absolute asset paths for Netlify subdirectory
 gulp.task('replace', ['optimize'], function () {
-  var optimalURL = '$1http://optimal-signature.netlify.com';
+  var optimalURL = '$1https://optimal-signature.netlify.app';
 
   return gulp.src('dist/**/*.html')
     .pipe($.replace(/("|'?)\/?styles\//g,  optimalURL + '/styles/'))
