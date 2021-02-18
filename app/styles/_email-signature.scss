@@ -28,7 +28,7 @@ body.email-signature {
     @include span-columns(12);
 
     @include media($medium) {
-      @include span-columns(12);
+      @include span-columns(6);
     }
 
     @include media($large) {
@@ -43,20 +43,19 @@ body.email-signature {
 
   .sig-container {
     @include span-columns(12);
-    padding: 0 0 0 100px;
 
     @include media($medium) {
       @include span-columns(6);
-      padding: 80px 0 0 100px;
+      margin-right: 0;
+      padding: 0 0 30px 30px;
     }
 
     @include media($large) {
       @include span-columns(6);
-      padding: 100px 100px 100px 180px;
+      padding: 0 0 100px 100px;
     }
 
     .sig-preview {
-      padding: 150px 0 150px 0;
       text-align: left;
     }
   }
@@ -69,7 +68,7 @@ body.email-signature {
       list-style-type: decimal;
       padding-left: 22px;
     }
-      
+
     li {
       padding-top: 15px;
     }
