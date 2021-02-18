@@ -81,12 +81,12 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 
 // Update absolute asset paths for Netlify subdirectory
 gulp.task('replace', ['optimize'], function () {
-  var netlifyURL = '$1http://signature.netlify.com';
+  var optimalURL = '$1http://optimal-signature.netlify.com';
 
   return gulp.src('dist/**/*.html')
-    .pipe($.replace(/("|'?)\/?styles\//g,  netlifyURL + '/styles/'))
-    .pipe($.replace(/("|'?)\/?scripts\//g, netlifyURL + '/scripts/'))
-    .pipe($.replace(/("|'?)\/?images\//g, netlifyURL + '/images/'))
+    .pipe($.replace(/("|'?)\/?styles\//g,  optimalURL + '/styles/'))
+    .pipe($.replace(/("|'?)\/?scripts\//g, optimalURL + '/scripts/'))
+    .pipe($.replace(/("|'?)\/?images\//g, optimalURL + '/images/'))
     .pipe(gulp.dest('dist'));
 });
 
